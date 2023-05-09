@@ -1,4 +1,4 @@
-## Instalacion en Arch Linux
+# Instalacion en Arch Linux
 
 **Compilador**
 ```bash
@@ -10,12 +10,13 @@ sudo pacman -S aarch64-linux-gnu-gcc
 sudo pacman -S qemu-system-aarch64
 ```
 
-**Sera necesario una herramienta que permita ver la pantalla de la**  
-**emulación de la Raspberry Pi que se esta ejecutando en QEMU.**
+Sera necesario una herramienta que permita ver la pantalla de la  
+emulación de la Raspberry Pi que se esta ejecutando en QEMU.
 
 ```bash
 sudo pacman -S tigervnc
 ```
+*Instalar con todas las dependencias necesarias*
 
 ## Uso
 
@@ -37,7 +38,7 @@ qemu-system-aarch64 -M raspi3b -kernel kernel8.img -serial stdio
 VNC server running on ::1:5901
 ```
 
-**Implica tener otra consola en el mismo directorio y inmediatamente hacer**
+Implica tener otra consola en el mismo directorio y inmediatamente hacer
 ```bash
 vncviewer :5901
 ```
