@@ -190,7 +190,7 @@ loop_do_delay:
  *  of the SecondaryBuffer with the black color 
  * 
  * @param: none 
- * @saveStack: none 
+ * @saveStack: x30  
  * @modifies: x1, x2 and w12
  * @return: void
  * @uses: draw_chunk2
