@@ -1,7 +1,9 @@
 	.text
 	.org 0x80000
-
-	// Setup Frame Buffer
+    
+    .include "data.s"
+	
+    // Setup Frame Buffer
 	.equ SCREEN_WIDTH, 		640
 	.equ SCREEN_HEIGH, 		480
 	.equ BITS_PER_PIXEL, 	32
