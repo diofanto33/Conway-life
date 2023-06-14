@@ -198,6 +198,9 @@ loop_do_delay:
  */
 
 draw_bg_fb2:
+    sub sp, sp, #8
+    str x30, [sp]
+
     ldr w12, blackColor
     ldr x0, =bufferSecundario
     mov x2, SCREEN_HEIGH 
@@ -210,6 +213,9 @@ loop_fb0:
     cbnz x1, loop_fb0      
     sub x2, x2, #1    
     cbnz x2, loop_fb1      
+    
+    ldr x30, [sp] 
+    add sp, sp, #8
     br x30
 
 .endif
