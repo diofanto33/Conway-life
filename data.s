@@ -7,7 +7,9 @@
 bufferSecundario: .skip BYTES_FRAMEBUFFER
 
 // A mayor número mas lento va la animación
-delay: .dword 0xFFFFFF 
+delay: .dword 0xFFFFF1 
+
+semilla: .dword 0xf924eefbee3f
 
 blackColor: .word 0x000000
 whiteColor: .word 0xFFFFFF
