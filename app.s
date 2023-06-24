@@ -46,10 +46,10 @@ main:
     bl draw_bg_fb2
     
     /* direct the seed */
-    mov x3, #40
-    mov x4, #40
+    mov x3, #0
+    mov x4, #0
     /* draw the seed */ 
-    bl seed_glider
+    bl random_seed
 
     /* update the frame-buffer */ 
     bl update_FB
